@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mad.app.MainActivity"
+    android:background="@drawable/sport1">
+
+
+    <Button
+        android:id="@+id/btn_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="38dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="#008000"
+        android:layout_marginStart="10dp"
+        android:text="START" />
+
+    <Button
+        android:id="@+id/btn_stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="STOP"
+        android:layout_alignBaseline="@+id/btn_start"
+        android:layout_alignBottom="@+id/btn_start"
+        android:textColor="#0000FF"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/btn_reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/btn_stop"
+        android:textColor="#FF0000"
+        android:text="RESET" />
+
+    <TextView
+        android:id="@+id/first_lat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_start"
+        android:visibility="invisible"
+        android:layout_alignEnd="@+id/btn_start"
+        android:layout_alignRight="@+id/btn_start"
+        android:layout_marginBottom="92dp"
+        android:text="firstlat" />
+
+    <TextView
+        android:id="@+id/first_long"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/first_lat"
+        android:layout_marginLeft="35dp"
+        android:layout_marginStart="35dp"
+        android:visibility="invisible"
+        android:layout_toEndOf="@+id/btn_stop"
+        android:layout_toRightOf="@+id/btn_stop"
+        android:text="firstlong" />
+
+    <TextView
+        android:id="@+id/disp_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="00:00:00:00"
+        android:textColor="#FF0000"
+        android:textSize="30sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/tv_perf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="42dp"
+        android:text="Performance"
+        android:layout_below="@+id/disp_time"
+        android:layout_alignLeft="@+id/btn_start"
+        android:layout_alignStart="@+id/btn_start"
+        android:layout_marginLeft="21dp"
+        android:layout_marginStart="21dp" />
+
+    <Button
+        android:id="@+id/btn_pause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PAUSE"
+        android:layout_below="@+id/first_long"
+        android:layout_toLeftOf="@+id/first_long"
+        android:layout_toStartOf="@+id/first_long" />
+
+</RelativeLayout>
